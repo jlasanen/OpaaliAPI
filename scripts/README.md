@@ -15,7 +15,7 @@ First you need to get your service specific _username_ and _password_ (Check the
 Then you should feed this to _get\_access\_token.sh to get the ***access\_token*** which is used in the rest of the API requests:
 
     
-     $ ./get\_access\_token.sh YjUzNWIwYzVlNWFlODE1Y2VhODJkYjZiM2IyNTA1OUNkOjElQU1Ddj93
+     $ ./get_access_token.sh YjUzNWIwYzVlNWFlODE1Y2VhODJkYjZiM2IyNTA1OUNkOjElQU1Ddj93
     3a66b3c8-3a34-423f-afb5-c7a425b17394
 
 
