@@ -1,0 +1,12 @@
+[
+    {
+        "name" : "JPLa",
+        picture : "https://github.com/jlasanen.png",
+        shortbio: "<b>JPLa</b>Duis sed consectetur est",
+        longbio: "<i>jlasanen</i>Etiam maximus lobortis erat, at luctus nulla finibus quis. Suspendisse non blandit elit."
+    },
+    {
+        name : "unknown"
+    }
+
+]  

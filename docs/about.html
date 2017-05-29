@@ -1,0 +1,17 @@
+---
+layout: page
+title: "About"
+description: "What is this blog for."
+header-img: "img/blog_logo-blank_1600x500.jpg"
+unknown-img: "img/unknown.png"
+---
+<h3>Lorem ipsum dolor sit amet...</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+
+{% for a in site.data.authors %}
+    {% if a.name != "unknown" %}
+    <div><p><a name="{{a.name}}"></a><img class="site-avatar-large" src="{% if a.picture %}{{a.picture}}{% else %}{{ site.baseurl }}/{{ page.unknown-img }}{% endif %}"></div><div class="longbio"><b>{{a.name}}</b><br>{{a.longbio}}</div><hr>
+    {% endif %}
+{% endfor %}    
+
+<!-- <img src="{{ site.baseurl }}/img/post-sample-image.jpg" alt="Post Sample Image"> -->

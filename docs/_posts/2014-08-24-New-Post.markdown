@@ -1,0 +1,9 @@
+---
+layout:     post
+title:      "New Post"
+subtitle:   "Use this as a template for a new post."
+date:       2044-08-24 12:00:00
+author:     "unknown"
+header-img: "img/unknown.jpg"
+---
+
