@@ -86,7 +86,7 @@ def labelToPin(l):
 def toBoard(l): 
   return labelToPin(l)-4 
 
-# while True: 
+# light up some random candles
 for i in treelights: 
 #    sleep(0.4) 
     if random.randint(0,1) > 0:
@@ -94,22 +94,16 @@ for i in treelights:
     else:
         leds.off(toBoard(i))
 
-# prisys.argv[1]
-# while True:
+# we want two command line arguments
 if len(sys.argv) == 3:
-#    input = raw_input('What would you like to send? ')
     s=sys.argv[1] + ' "'
     input = sys.argv[2]
     for letter in input:
-#            print "<", letter, ">"
             if not letter.upper() in CODE:
                 ltr = '?'
-#                print ltr
             else:
                 ltr = letter
-#            print CODE[ltr.upper()],
             for symbol in CODE[ltr.upper()]:
-#                print symbol,
                 s+=symbol
                 if symbol == '-':
                     dash()
@@ -119,22 +113,4 @@ if len(sys.argv) == 3:
                     sleep(0.5)
             sleep(0.5)
             s+=" "
-#    print("Message Sent:", s)
-#    print "Message sent;", s
     print s+'"'
-##
-# Example code from The Pi Hut comments section by Dj
-# "
-#   Just the mapping of pins to LEDs.... 
-#   I worked it out by hand (2's the star, 3's unknown) and put together this bit of code for a cascade of LEDs...
-# "
-# https://thepihut.com/products/3d-xmas-tree-for-raspberry-pi
-##
-
-#from time import sleep 
-#from signal import pause 
-
-#led.off()
-#for i in treelights: 
-#    sleep(0.5) 
-#    leds.off(toBoard(i)) 
